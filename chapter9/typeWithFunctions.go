@@ -2,19 +2,19 @@ package main
 
 import "fmt"
 
-//type MyType string
+// type MyType string
 //
-//func (m MyType) sayHi() {
-//	fmt.Println("Hi from", m)
+//	func (m MyType) sayHi() {
+//		fmt.Println("Hi from", m)
 //
-//}
+// }
 //
-//func main() {
-//	value := MyType("a MyType value")
-//	value.sayHi()
-//	anotherValue := MyType("another value")
-//	anotherValue.sayHi()
-//}
+//	func main() {
+//		value := MyType("a MyType value")
+//		value.sayHi()
+//		anotherValue := MyType("another value")
+//		anotherValue.sayHi()
+//	}
 type Number1 int
 
 func (n Number1) Add(otherNumber int) {
