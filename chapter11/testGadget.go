@@ -10,7 +10,7 @@ func playList(device gadget.TapePlayer, songs []string) {
 }
 
 func main() {
-	player := gadget.TapeRecorder{}
-	mixtape := []string{"Jessie's Girl", "Whip It", "9 to 5"}
-	playList(player, mixtape)
+	//player := gadget.TapeRecorder{}
+	//mixtape := []string{"Jessie's Girl", "Whip It", "9 to 5"}
+	//playList(player, mixtape)
 }
