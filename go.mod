@@ -8,6 +8,5 @@ require (
 	github.com/headfirstgo/gadget v0.0.0-20190307073304-6d9928a1bb98
 	github.com/headfirstgo/magazine v0.0.0-20190307065844-6ebbd55da74e
 	github.com/musienko-maxim/keyboard v0.0.0-20230810222338-f83018cf64a6
-	github.com/mypkg/myinterface v0.0.0-20230810222338-f83018cf64a6
 
 )
