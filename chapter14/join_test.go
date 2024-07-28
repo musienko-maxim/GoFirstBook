@@ -6,18 +6,33 @@ import (
 	"testing"
 )
 
+func errorString(list []string, got string, want string) string {
+	return fmt.Sprintf("JoinWithCommas(%#v) = \"%s\", want \"%s\"", list, got, want)
+}
+
+func TestOneElement(t *testing.T) {
+	list := []string{"apple"}
+	want := "apple"
+	got := prose.JoinWithCommas(list)
+	if got != want {
+		t.Errorf(errorString(list, got, want))
+	}
+}
+
 func TestTwoElements(t *testing.T) {
 	list := []string{"apple", "orange"}
-	fmt.Println(">>>>>>>>>>>>>>>>: " + prose.JoinWithCommas(list))
-	if prose.JoinWithCommas(list) != "apple and orange" {
-		t.Error("didn't match expected value")
+	want := "apple and orange"
+	got := prose.JoinWithCommas(list)
+	if got != want {
+		t.Errorf(errorString(list, got, want))
 	}
 }
 
 func TestThreeElements(t *testing.T) {
 	list := []string{"apple", "orange", "pear"}
-	fmt.Println("---------------: " + prose.JoinWithCommas(list))
-	if prose.JoinWithCommas(list) != "apple, orange, and pear" {
-		t.Error("didn't match expected value")
+	want := "apple, orange, and pear"
+	got := prose.JoinWithCommas(list)
+	if got != want {
+		t.Errorf(errorString(list, got, want))
 	}
 }
